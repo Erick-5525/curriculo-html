@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mais Projetos - Erick Ferreira</title>
+  
+</head>
+<body>
+  <header>
+    <h1>Projetos</h1>
+  </header>
+
+    <div class="card">
+      <img src="link" alt="Projeto 4">
+      <div class="card-content">
+        <h3>Legendas de Vídeos do YouTube</h3>
+        <p>Integração com API para extrair e salvar legendas automaticamente.</p>
+        <div class="tags">
+          <span>C#</span><span>API</span><span>YouTube</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="link" alt="Projeto 5">
+      <div class="card-content">
+        <h3>Calculadora Visual de Regra de 3</h3>
+        <p>Interface interativa em Blazor com caixas conectadas.</p>
+        <div class="tags">
+          <span>C#</span><span>Blazor</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="link" alt="Projeto 6">
+      <div class="card-content">
+        <h3>Checklist de Recebimento de Mercado</h3>
+        <p>Sistema para controle de recebimento com C#.</p>
+        <div class="tags">
+          <span>C#</span><span>Blazor Server</span><span>Web</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+    :root {
+      --bg: #0d1117;
+      --bg-secundario: #161b22;
+      --verde-neon: #00ff88;
+      --verde-escuro: #007f4f;
+      --texto-claro: #c9d1d9;
+      --borda: #30363d;
+      --fonte-mono: 'Courier New', monospace;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--fonte-mono);
+      background-color: var(--bg);
+      color: var(--texto-claro);
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+      border-bottom: 2px solid var(--borda);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--verde-neon);
+      display: inline-block;
+      border-bottom: 2px solid var(--verde-neon);
+      padding-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: var(--bg-secundario);
+      border-left: 4px solid var(--verde-neon);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 12px #00000066;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px var(--verde-neon);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--borda);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+      color: var(--verde-neon);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .tags {
+      margin-top: 12px;
+    }
+
+    .tags span {
+      display: inline-block;
+      background-color: var(--verde-escuro);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-right: 6px;
+      font-size: 0.8rem;
+    }
+
+    
+  </style>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erick Ferreira - Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --bg-secundario: #161b22;
+      --verde-neon: #00ff88;
+      --verde-escuro: #007f4f;
+      --texto-claro: #c9d1d9;
+      --borda: #30363d;
+      --fonte-mono: 'Courier New', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--fonte-mono);
+      background-color: var(--bg);
+      color: var(--texto-claro);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--bg-secundario);
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 1px solid var(--borda);
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid var(--verde-neon);
+      margin-top: 15px;
+    }
+
+    header h1 {
+      color: var(--verde-neon);
+      font-size: 2.2rem;
+    }
+
+    nav {
+      background-color: var(--bg);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--borda);
+    }
+
+    nav a {
+      color: var(--verde-neon);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      text-shadow: 0 0 8px var(--verde-neon);
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: var(--verde-neon);
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    article {
+      background-color: var(--bg-secundario);
+      border-left: 4px solid var(--verde-neon);
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 10px #00000033;
+    }
+
+    .mais-projetos-wrapper {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .btn-mais-projetos {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: var(--verde-neon);
+      color: var(--bg);
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 0 10px var(--verde-neon);
+      transition: 0.3s ease;
+    }
+
+    .btn-mais-projetos:hover {
+      box-shadow: 0 0 20px var(--verde-neon), 0 0 40px var(--verde-neon);
+      transform: scale(1.05);
+    }
+
+    aside {
+      background-color: #0e1c1a;
+      border-left: 4px solid var(--verde-escuro);
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: var(--bg-secundario);
+      color: var(--texto-claro);
+      text-align: center;
+      padding: 20px 10px;
+      border-top: 1px solid var(--borda);
+      margin-top: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .icon {
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .icon.github {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 12px rgba(255,255,255,0.3);
+    }
+
+    .icon.linkedin {
+      background-color: #0077b5;
+      color: #000;
+      box-shadow: 0 0 15px #00aaff;
+    }
+
+    .icon.instagram {
+      background-color: transparent;
+      color: #ff0080;
+      border: 2px solid #ff0080;
+      box-shadow: 0 0 12px #ff0080;
+      font-size: 32px;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px var(--verde-neon);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header img {
+        width: 90px;
+        height: 90px;
+      }
+
+      .social-icons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Erick Ferreira</h1>
+    <p></p>
+    <img src="file:///C:/Users/Erick/Desktop/IMG%20IMG.jpg" alt="Minha foto">
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#extras">Extras</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia. Busco sempre aprender coisas novas e aplicar meus conhecimentos em projetos práticos.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Lógica de programação</li>
+        <li>C# e .NET</li>
+        <li>HTML5 e CSS3</li>
+        <li>Git e GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <article>
+        <h3>Check List De Fornecedor</h3>
+        Uma solução desktop em C#/.NET para geração e controle de checklists de fornecedores, centralizando informações e status de conformidade em uma interface simples e funcional.   
+      </article>
+
+      <article>
+        <h3>Gerenciamento de Funcionários</h3>
+        Uma aplicação console em C# que exemplifica o uso de Programação Orientada a Objetos junto à estrutura List<T>, permitindo adicionar funcionários, exibir a lista, remover registros e aplicar reajustes salariais em funcionários específicos 
+      </article>
+
+      <article>
+        <h3>Gerenciamento de Alunos</h3>
+        <p>Uma aplicação console em C# que demonstra Programação Orientada a Objetos e uso de List<T>, com funcionalidades para adicionar e exibir alunos, totalizar alunos por curso e calcular a média das notas de cada aluno cadastrado</p>
+      </article>
+
+      <!-- Botão Mais Projetos -->
+      <div class="mais-projetos-wrapper">
+        <a href="mais-projetos.html" target="_blank" class="btn-mais-projetos">
+          ➕ Mais projetos
+        </a>
+      </div>
+
+    </section>
+
+    <aside id="extras">
+      <h2>Mais sobre mim</h2>
+      <p> ...<br> Meus links :</p>
+      <div class="social-icons">
+        <a href="https://github.com/Erick-5525" target="_blank" class="icon github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/erick-ferreira-b09817316/" target="_blank" class="icon linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/e_marcolino_/" target="_blank" class="icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Contato: erickfmarcolino04@hotmail.com // erickfmarcolino51@gmail.com</p>
+    <p>© 2025 Erick Ferreira</p>
+  </footer>
+</body>
+</html>
